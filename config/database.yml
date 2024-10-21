@@ -1,0 +1,27 @@
+development: &development
+  adapter: postgresql
+  database: fat_free_crm_development
+  username:
+  password:
+  host:     localhost
+  port:     5432
+  schema_search_path: public
+  min_messages: warning
+
+test:
+  <<: *development
+  database: fat_free_crm_test
+
+production:
+  adapter: postgresql
+  host: cb5ajfjosdpmil.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com
+  database: dd1b7cn9ce0avo
+  username: u8j54qnvrj023m
+  password: p7eb5425774df70f8617e0ef6e7f63e79eb144420bb8bb505cbba040d1099e000
+  port: 5432
+  schema_search_path: public
+  min_messages: warning
+
+staging:
+  <<: *development
+  database: fat_free_crm_staging
