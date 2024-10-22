@@ -1,4 +1,4 @@
-# Fat Free CRM  [![Code Climate][codeclimate-img-url]][codeclimate-url] [![Discord][discord-img-url]][discord-url]
+# Jade CRM  [![Code Climate][codeclimate-img-url]][codeclimate-url] [![Discord][discord-img-url]][discord-url]
 
 [codeclimate-img-url]: https://codeclimate.com/github/fatfreecrm/fat_free_crm.svg
 [codeclimate-url]: https://codeclimate.com/github/fatfreecrm/fat_free_crm
@@ -65,23 +65,23 @@ Please view one of the following installation guides:
 
 ### [Setup Linux or Mac OS](http://guides.fatfreecrm.com/Setup-Linux-or-Mac-OS)
 
-Installing Fat Free CRM on Linux or Mac OS X
+Installing Jade CRM on Linux or Mac OS X
 
 ### [Setup Heroku](http://guides.fatfreecrm.com/Setup-Heroku)
 
-Setting up a Heroku instance for Fat Free CRM
+Setting up a Heroku instance for Jade CRM
 
 ### [Setup Microsoft Windows](http://guides.fatfreecrm.com/Setup-Microsoft-Windows)
 
-Installing Fat Free CRM on Microsoft Windows
+Installing Jade CRM on Microsoft Windows
 
-### [Running Fat Free CRM as a Rails Engine](http://guides.fatfreecrm.com/Running-as-a-Rails-Engine)
+### [Running Jade CRM as a Rails Engine](http://guides.fatfreecrm.com/Running-as-a-Rails-Engine)
 
-Run the Fat Free CRM gem within a separate Rails application.
-This is the best way to deploy Fat Free CRM if you need to add plugins or make any customizations. Note that it is not yet simple to 'bolt' Fat Free CRM into your existing rails project, but we're heading in that direction.
+Run the Jade CRM gem within a separate Rails application.
+This is the best way to deploy Jade CRM if you need to add plugins or make any customizations. Note that it is not yet simple to 'bolt' Jade CRM into your existing rails project, but we're heading in that direction.
 
 
-## Upgrading from previous versions of Fat Free CRM
+## Upgrading from previous versions of Jade CRM
 
 Please read the [Changelog](https://github.com/fatfreecrm/fat_free_crm/blob/master/CHANGELOG.md) document for more detailed information on upgrading from previous versions.
 
@@ -104,7 +104,7 @@ Please read the [Changelog](https://github.com/fatfreecrm/fat_free_crm/blob/mast
 
 ## For Developers
 
-Fat Free CRM is released under the MIT license and is freely available for you to use for your own purposes. We do encourage contributions to make Fat Free CRM even better. Send us a pull-request and we'll do our best to accommodate your needs.
+Jade CRM is released under the MIT license and is freely available for you to use for your own purposes. We do encourage contributions to make Jade CRM even better. Send us a pull-request and we'll do our best to accommodate your needs.
 
 Specific features that are not 'Fat Free' in nature, can be added by creating Rails Engines. See the [wiki](http://github.com/fatfreecrm/fat_free_crm/wiki) for information on how to do this.
 
@@ -124,7 +124,7 @@ See the [contributors graph](https://github.com/fatfreecrm/fat_free_crm/graphs/c
 
 ## License
 
-Fat Free CRM
+Jade CRM
 Copyright (c) 2008-2018 Michael Dvorkin and contributors.
 
 Permission is hereby granted, free of charge, to any person obtaining

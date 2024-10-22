@@ -6,7 +6,7 @@ require 'fat_free_crm/version'
 Gem::Specification.new do |gem|
   gem.name = 'fat_free_crm'
   gem.authors = ['Michael Dvorkin', 'Stephen Kenworthy', "Daniel O'Connor"]
-  gem.summary = 'Fat Free CRM'
+  gem.summary = 'Jade CRM'
   gem.description = 'An open source, Ruby on Rails customer relationship management platform'
   gem.homepage = 'http://fatfreecrm.com'
   gem.email = ['mike@fatfreecrm.com', 'steveyken@gmail.com', 'daniel.oconnor@gmail.com']

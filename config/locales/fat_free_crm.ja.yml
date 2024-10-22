@@ -195,7 +195,7 @@ ja:
   msg_cant_do: ! '%{asset}は現在存在しないため、%{action}を出来ません。'
   msg_email_not_found: そのEメールアドレスを持つユーザが見つかりませんでした。
   msg_enter_new_password: 新しいパスワードを入力してください。
-  msg_goodbye: ログアウトしました。Fat Free CRMをご利用いただき、ありがとうございます!
+  msg_goodbye: ログアウトしました。Jade CRMをご利用いただき、ありがとうございます!
   msg_invalid_password: ^現在のパスワードを指定してください。
   msg_invalig_login: ユーザ名かパスワードが不正です。
   msg_last_login: あなたの最終ログインは%{value}です。
@@ -206,8 +206,8 @@ ja:
   msg_password_updated: パスワードの更新が成功しました。
   msg_pwd_instructions_sent: あなたのパスワードのリセット手順を送信しました。 Eメールを確認して下さい。
   msg_require_admin: このページへのアクセスは管理者でなければなりません。
-  msg_successful_signup: サインアップ成功です。Fat Free CRMへようこそ!
-  msg_welcome: Fat Free CRMへようこそ!
+  msg_successful_signup: サインアップ成功です。Jade CRMへようこそ!
+  msg_welcome: Jade CRMへようこそ!
 
   # Options.
   #----------------------------------------------------------------------------
@@ -645,13 +645,13 @@ ja:
   about: About
   about_dev_group: 開発者のためのディスカッショングループ
   about_features: 機能とバグ
-  about_ffc: Fat Free CRMについて
-  about_ffc_resources: Fat Free CRMリソース
-  about_ffc_version: Fat Free CRM バージョン
+  about_ffc: Jade CRMについて
+  about_ffc_resources: Jade CRMリソース
+  about_ffc_version: Jade CRM バージョン
   about_home_page: ホームページ
   about_project_page: プロジェクトページ
   about_thank_you: |
-    Fat Free CRMをご利用いただきありがとうございます。
+    Jade CRMをご利用いただきありがとうございます。
   about_twitter: Twitterでのコミットのお知らせ
   about_user_group: ユーザのためのディスカッショングループ
   admin: 管理画面
@@ -692,8 +692,8 @@ ja:
 
   # Views -> Admin
   #----------------------------------------------------------------------------
-  back_to_crm: Fat Free CRMに戻る
-  crm_admin_page: Fat Free CRM管理
+  back_to_crm: Jade CRMに戻る
+  crm_admin_page: Jade CRM管理
 
   # Views -> Admin -> Groups
   #----------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 
 # Copyright (c) 2008-2013 Michael Dvorkin and contributors.
 #
-# Fat Free CRM is freely distributable under the terms of MIT license.
+# Jade CRM is freely distributable under the terms of MIT license.
 # See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 #------------------------------------------------------------------------------
 require 'pathname'
@@ -22,10 +22,10 @@ module FatFreeCRM
       end
     end
 
-    # Scan config/locales directory for Fat Free CRM localization files
+    # Scan config/locales directory for Jade CRM localization files
     # (i.e. *_fat_free_crm.yml) and return locale part of the file name.
     # We can't use ::I18n.available_locales because rails provides it's own
-    # translations too and we only want the locales that Fat Free CRM supports.
+    # translations too and we only want the locales that Jade CRM supports.
     #----------------------------------------------------------------------------
     def locales
       @@locales ||= ::I18n.load_path.grep(/_fat_free_crm\.yml$/).map { |path| Pathname.new(path).basename.to_s.match(/(.*)_fat_free_crm\.yml/)[1] }.uniq
