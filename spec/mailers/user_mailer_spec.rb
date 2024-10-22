@@ -2,7 +2,7 @@
 
 # Copyright (c) 2008-2013 Michael Dvorkin and contributors.
 #
-# Fat Free CRM is freely distributable under the terms of MIT license.
+# Jade CRM is freely distributable under the terms of MIT license.
 # See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 #------------------------------------------------------------------------------
 require 'spec_helper'
@@ -25,7 +25,7 @@ describe UserMailer do
       end
 
       it "sets the subject" do
-        expect(mail.subject).to eq("Fat Free CRM: You have been assigned Ghostbusters Account")
+        expect(mail.subject).to eq("Jade CRM: You have been assigned Ghostbusters Account")
       end
 
       it "includes the name of the person who re-assigned the lead in the body" do
@@ -50,7 +50,7 @@ describe UserMailer do
       end
 
       it "sets the subject" do
-        expect(mail.subject).to eq("Fat Free CRM: You have been assigned Harold Ramis Contact")
+        expect(mail.subject).to eq("Jade CRM: You have been assigned Harold Ramis Contact")
       end
 
       it "includes the name of the person who re-assigned the lead in the body" do
@@ -75,7 +75,7 @@ describe UserMailer do
       end
 
       it "sets the subject" do
-        expect(mail.subject).to eq("Fat Free CRM: You have been assigned Bill Murray Lead")
+        expect(mail.subject).to eq("Jade CRM: You have been assigned Bill Murray Lead")
       end
 
       it "includes the name of the person who re-assigned the lead in the body" do
@@ -100,7 +100,7 @@ describe UserMailer do
       end
 
       it "sets the subject" do
-        expect(mail.subject).to eq("Fat Free CRM: You have been assigned Big Opportunity")
+        expect(mail.subject).to eq("Jade CRM: You have been assigned Big Opportunity")
       end
 
       it "includes the name of the person who re-assigned the lead in the body" do

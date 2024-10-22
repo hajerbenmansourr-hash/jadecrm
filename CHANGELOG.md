@@ -248,7 +248,7 @@ Sat Apr 21, 2018 (0.18.0)
 #665 Support for Ruby 2.3 has been dropped, with test coverage for 2.4 and 2.5 enabled.
 
 #### Swap to FactoryBot
-If you consume Fat Free CRM as an engine and re-use any factories, you'll need to [upgrade to FactoryBot](https://github.com/thoughtbot/factory_bot/blob/4-9-0-stable/UPGRADE_FROM_FACTORY_GIRL.md).
+If you consume Jade CRM as an engine and re-use any factories, you'll need to [upgrade to FactoryBot](https://github.com/thoughtbot/factory_bot/blob/4-9-0-stable/UPGRADE_FROM_FACTORY_GIRL.md).
 
 #### Removed methods
 `Lead.update_with_permissions` is removed, use user_ids and group_ids inside attributes instead and call lead.update_with_account_and_lead_counters
@@ -486,7 +486,7 @@ Fri Dec 27, 2013 (0.13.0)
 - Add user_id to lists table    
 - Add campaign to opportunity advanced search.
 - Add id to export formats. 
-- Added ActiveSupport lazy load hooks for all models in Fat Free CRM.
+- Added ActiveSupport lazy load hooks for all models in Jade CRM.
 - Added timeago library to enable future caching of search results. 
 - Atom and RSS feeds now deal with cases where user doesn't exist.
 - Better solution to internationalizing jquery.timeago plugin. 
@@ -564,7 +564,7 @@ Fri, Jun 28, 2013 (0.12.0)
 
 Tue, Mar 16, 2013
 ---------------------------------------------------------------------
-- Changed Fat Free CRM license to MIT, see MIT-LICENSE file.
+- Changed Jade CRM license to MIT, see MIT-LICENSE file.
 
 Sat, Dec 29, 2012 (0.11.4)
 ---------------------------------------------------------------------
@@ -646,7 +646,7 @@ Tue, Aug 17, 2010
 ---------------------------------------------------------------------
 - Properly set the account value when attaching a contact to the account (closed LH #165)
 - Fixed failing dropbox specs by rescuing proper exception (Rails 2.3.8).
-- Added PrependEngineViews library module to let Fat Free CRM plugins override default views.
+- Added PrependEngineViews library module to let Jade CRM plugins override default views.
 
 Mon, Aug 16, 2010
 ---------------------------------------------------------------------
@@ -689,7 +689,7 @@ Fri, Aug 6, 2010
 
 Thu, Aug 5, 2010
 ---------------------------------------------------------------------
-- Fat Free CRM by default requires Rails 2.3.8.
+- Jade CRM by default requires Rails 2.3.8.
 - Bundled will_paginate and faker as vendor/gems.
 
 Wed, Aug 4, 2010
@@ -945,7 +945,7 @@ Sat, Dec 19, 2009
 ---------------------------------------------------------------------
 - Fixed deprecation warning when adding a new comment.
 - Fixed Apache/Passenger issue of not being able to load tab settings.
-- Merged in I18n branch: Fat Free CRM could be easily localized now by dropping in config/locales file.
+- Merged in I18n branch: Jade CRM could be easily localized now by dropping in config/locales file.
 - Added exception handling and custom 500 status code template.
 
 Mon, Dec 14, 2009
@@ -970,7 +970,7 @@ Sun, Nov 29, 2009
 
 Tue, Nov 24, 2009
 ---------------------------------------------------------------------
-- Happy birthday, Fat Free CRM is one year old!
+- Happy birthday, Jade CRM is one year old!
 
 Wed, Nov 18, 2009
 ---------------------------------------------------------------------
@@ -1046,7 +1046,7 @@ Tue, Oct 20, 2009
 ---------------------------------------------------------------------
 - Added Language option stubs to user's profile.
 - Disabled tab highlighting when showing user's profile.
-- Include all Fat Free CRM modules from Rails initializer.
+- Include all Jade CRM modules from Rails initializer.
 - Added FatFreeCRM::I18n module.
 
 Sun, Oct 18, 2009
@@ -1062,7 +1062,7 @@ Wed, Oct 14, 2009
 
 Sun, Oct 11, 2009
 ---------------------------------------------------------------------
-- Added full support for deploying Fat Free CRM in subdirectory (see config/settings.yml).
+- Added full support for deploying Jade CRM in subdirectory (see config/settings.yml).
 - Made Facebox library work with the project is deployed in subdirectory.
 
 Sat, Oct 10, 2009
@@ -1281,7 +1281,7 @@ Wed, Aug 5, 2009
 Tue, Aug 4, 2009
 ---------------------------------------------------------------------
 - Upgraded [acts_as_commentable] plugin for Ruby 1.9 compatibility.
-- Updated tab settings to allow Fat Free CRM to run from a subdirectory (thanks, okyada!).
+- Updated tab settings to allow Jade CRM to run from a subdirectory (thanks, okyada!).
 - Updated [rake crm:settings:load] task to ensure Rails 2.3.3 compatibility.
 - Implemented Admin > [Edit User] form.
 
@@ -1436,7 +1436,7 @@ Thu, Jun 25, 2008
 
 Mon, Jun 22, 2009
 ---------------------------------------------------------------------
-- Fat Free CRM website is up at http://www.fatfreecrm.com
+- Jade CRM website is up at http://www.fatfreecrm.com
 
 Sat, Jun 20, 2009
 ---------------------------------------------------------------------
@@ -2151,7 +2151,7 @@ Sun, Jan 18, 2009
 Sat, Jan 17, 2009
 ---------------------------------------------------------------------
 - Implemented FatFreeCRM::Plugin and FatFreeCRM::Callback modules.
-- Created first sample Fat Free CRM plugin!
+- Created first sample Jade CRM plugin!
 - Uninstalled Searchlogic plugin and added Rails Engines.
 - Fixed :my scope to use LEFT OUTER JOINs with permissions.
 
@@ -2200,7 +2200,7 @@ Thu, Jan 8, 2009
 - Added app-specific rake tasks -- app:setup, app:demo, and app:reset.
 - Updated [uses_mysql_uuid] plugin to explicitly check for MySQL v5 or later.
 - Updated database migrations and rake tasks to make them database-type neutral.
-- Fat Free CRM now works with MySQL v4 and SQLite!
+- Jade CRM now works with MySQL v4 and SQLite!
 
 Wed, Jan 7, 2009
 ---------------------------------------------------------------------

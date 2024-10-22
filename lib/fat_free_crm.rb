@@ -2,14 +2,14 @@
 
 # Copyright (c) 2008-2013 Michael Dvorkin and contributors.
 #
-# Fat Free CRM is freely distributable under the terms of MIT license.
+# Jade CRM is freely distributable under the terms of MIT license.
 # See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 #------------------------------------------------------------------------------
 
 module FatFreeCRM
   class << self
     # Return either Application or Engine,
-    # depending on how Fat Free CRM has been loaded
+    # depending on how Jade CRM has been loaded
     def application
       engine? ? Engine : Application
     end
@@ -27,7 +27,7 @@ module FatFreeCRM
   end
 end
 
-# Load Fat Free CRM as a Rails Engine, unless running as a Rails Application
+# Load Jade CRM as a Rails Engine, unless running as a Rails Application
 require 'fat_free_crm/engine' unless defined?(FatFreeCRM::Application)
 
 require 'fat_free_crm/load_settings' # register load hook for Setting

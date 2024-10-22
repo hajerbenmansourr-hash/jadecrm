@@ -2,7 +2,7 @@
 
 # Copyright (c) 2008-2013 Michael Dvorkin and contributors.
 #
-# Fat Free CRM is freely distributable under the terms of MIT license.
+# Jade CRM is freely distributable under the terms of MIT license.
 # See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 #------------------------------------------------------------------------------
 module FatFreeCRM
@@ -13,7 +13,7 @@ module FatFreeCRM
       # a caret as the first character of the error message.
       #
       # This feature was handled by 'advanced_errors' plugin in Rails 2.x
-      # version of Fat Free CRM.
+      # version of Jade CRM.
       #----------------------------------------------------------------------------
       def self.included(base)
         base.class_eval do
