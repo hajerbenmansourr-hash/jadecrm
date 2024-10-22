@@ -2,7 +2,7 @@
 
 # Copyright (c) 2008-2013 Michael Dvorkin and contributors.
 #
-# Jade CRM is freely distributable under the terms of MIT license.
+# Fat Free CRM is freely distributable under the terms of MIT license.
 # See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 #------------------------------------------------------------------------------
 class UserMailer < ActionMailer::Base
@@ -11,7 +11,7 @@ class UserMailer < ActionMailer::Base
     @entity_name = entity.name
     @entity_type = entity.class.name
     @assigner_name = assigner.name
-    mail subject: "Jade CRM: You have been assigned #{@entity_name} #{@entity_type}",
+    mail subject: "Fat Free CRM: You have been assigned #{@entity_name} #{@entity_type}",
          to: entity.assignee.email,
          from: from_address
   end
@@ -19,6 +19,6 @@ class UserMailer < ActionMailer::Base
   private
 
   def from_address
-    Setting.dig(:smtp, :from).presence || "Jade CRM <noreply@fatfreecrm.com>"
+    Setting.dig(:smtp, :from).presence || "Fat Free CRM <noreply@fatfreecrm.com>"
   end
 end

@@ -8,4 +8,4 @@ Please do not disclose the issue publicly until it has been resolved and release
 
 ## Security Advisories
 
-When security advisories are released by the Jade CRM team, they will be announced on the [Jade CRM users](https://groups.google.com/forum/#!forum/fat-free-crm-users) google group. If you wish to receive security announcements, you should subscribe to that group.
+When security advisories are released by the Fat Free CRM team, they will be announced on the [Fat Free CRM users](https://groups.google.com/forum/#!forum/fat-free-crm-users) google group. If you wish to receive security announcements, you should subscribe to that group.

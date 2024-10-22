@@ -2,7 +2,7 @@
 
 # Copyright (c) 2008-2013 Michael Dvorkin and contributors.
 #
-# Jade CRM is freely distributable under the terms of MIT license.
+# Fat Free CRM is freely distributable under the terms of MIT license.
 # See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 #------------------------------------------------------------------------------
 require 'rubygems'
@@ -36,7 +36,7 @@ RSpec.configure do |config|
 
   config.fixture_path = "#{Rails.root}/spec/fixtures"
 
-  # RSpec configuration options for Jade CRM.
+  # RSpec configuration options for Fat Free CRM.
   config.include RSpec::Rails::Matchers
   config.include FactoryBot::Syntax::Methods
   config.include Devise::Test::ControllerHelpers, type: :controller

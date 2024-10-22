@@ -1,5 +1,5 @@
 The following people have contributed code, patches, bug fixes, and language
-translations to the Jade CRM:
+translations to the Fat Free CRM:
 
   * Aaron Brethorst
   * Adis Osmonov ªº

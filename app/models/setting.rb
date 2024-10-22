@@ -2,7 +2,7 @@
 
 # Copyright (c) 2008-2013 Michael Dvorkin and contributors.
 #
-# Jade CRM is freely distributable under the terms of MIT license.
+# Fat Free CRM is freely distributable under the terms of MIT license.
 # See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 #------------------------------------------------------------------------------
 # == Schema Information
@@ -16,7 +16,7 @@
 #  updated_at    :datetime
 #
 
-# Jade CRM settings are stored in three places, and are loaded in the following order:
+# Fat Free CRM settings are stored in three places, and are loaded in the following order:
 #
 # 1) config/settings.default.yml
 # 2) config/settings.yml  (if exists)
