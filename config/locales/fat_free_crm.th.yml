@@ -502,7 +502,7 @@ th:
   password_intro: โปรดระบุอีเมล์ของท่าน จากนั้นขั้นตอนการเปลี่ยนรหัสผ่านจะส่งถึงท่านผ่านทางอีเมล์
   reset_password: เปลี่ยนรหัสผ่าน
   update_password_and_login: ปรับปรุงรหัสผ่านและเข้าสู่ระบบ
-  back_to_crm: Back to Fat Free CRM
+  back_to_crm: Back to Jade CRM
   crm_admin_page: Fat Free CRM Administration
   approve: อนุมัติ
   create_user: เพิ่มผู้ใช้
