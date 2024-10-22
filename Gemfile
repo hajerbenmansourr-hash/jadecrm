@@ -6,8 +6,8 @@ source 'https://rubygems.org'
 # ----------------------------------------------------------------------
 
 case ENV['CI'] && ENV['DB']
-when 'sqlite'
-  gem 'sqlite3', '~> 1.6.8'
+#when 'sqlite'
+  #gem 'sqlite3', '1.4.2'
 when 'mysql'
   gem 'mysql2'
 when 'postgres'
@@ -78,7 +78,7 @@ group :test do
   gem 'database_cleaner'
   gem 'zeus', platform: :ruby unless ENV["CI"]
   gem 'timecop'
-  gem 'sqlite3', '~> 1.6.8'
+  #gem 'sqlite3', '1.4.2'
   gem 'webrick'
 end
 
@@ -94,7 +94,7 @@ gem 'coffee-rails'
 gem 'uglifier'
 gem 'execjs'
 # gem 'therubyracer', platform: :ruby unless ENV["CI"]
-gem 'mini_racer'
+#gem 'mini_racer'
 gem 'nokogiri', '>= 1.8.1'
 gem 'activemodel-serializers-xml'
 gem 'bootsnap', require: false

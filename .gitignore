@@ -30,3 +30,5 @@ Design
 .vagrant
 storage/
 .byebug_history
+
+/config/credentials/production.key
