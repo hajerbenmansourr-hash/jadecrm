@@ -119,7 +119,8 @@ class User < ActiveRecord::Base
   end
 
   def active_for_authentication?
-    super && confirmed? && !awaits_approval? && !suspended?
+    #&& confirmed?
+    super && !awaits_approval? && !suspended?
   end
 
   def inactive_message
