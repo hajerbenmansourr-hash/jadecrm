@@ -1,52 +1,23 @@
-# Usage:
-# docker volume create pgdata
-# docker volume create gems
-# docker-compose up
-# docker-compose exec web bundle exec rake db:create db:schema:load ffcrm:demo:load
+FROM ruby:3.2
 
-FROM ruby:3.3
+WORKDIR /app
 
-LABEL author="Steve Kenworthy"
+RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+RUN gem install bundler -v 2.4.10
 
-ENV HOME /home/app
+COPY . .
 
-RUN mkdir -p $HOME
+RUN bundle install
 
-WORKDIR $HOME
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-ADD . $HOME
-RUN apt-get update && \
-	apt-get install -y imagemagick tzdata && \
-	apt-get autoremove -y && \
-	cp config/database.postgres.docker.yml config/database.yml && \
-	gem install bundler && \
-	bundle config set --local deployment 'true' && \
-	bundle install --deployment && \
-	bundle exec rails assets:precompile
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
 
-CMD ["bundle","exec","rails","s"]
 
-EXPOSE 3000
 
-# # Usage:
-# # docker volume create pgdata
-# # docker volume create gems
-# # docker-compose up
-# # docker-compose exec web bundle exec rake db:create db:schema:load ffcrm:demo:load assets:precompile
 
-# FROM phusion/passenger-ruby24
-# MAINTAINER Steve Kenworthy
 
-# ENV HOME /home/app
 
-# ADD . /home/app
-# WORKDIR /home/app
 
-# RUN apt-get update \
-#   && apt-get install -y imagemagick firefox tzdata \
-#   && apt-get autoremove -y \
-#   && cp config/database.postgres.docker.yml config/database.yml \
-#   && chown -R app:app /home/app \
-#   && rm -f /etc/service/nginx/down /etc/nginx/sites-enabled/default \
-#   && cp .docker/nginx/sites-enabled/ffcrm.conf /etc/nginx/sites-enabled/ffcrm.conf \
-#   && bundle install --deployment
