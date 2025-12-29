@@ -527,7 +527,7 @@ DEPENDENCIES
   premailer
   pry-rails
   puma
-  rails (>= 7.0.0, < 7.3.0)
+  rails (>= 6.1.7)
   rails-controller-testing
   rails-i18n
   rails-observers

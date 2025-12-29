@@ -38,6 +38,10 @@ end
 # Remove premailer auto-require
 gem 'premailer', require: false
 
+gem 'rails', '~> 6.1.7'
+gem 'activerecord', '~> 6.1.7'
+gem 'activesupport', '~> 6.1.7'
+
 # Remove fat_free_crm dependency, to stop it from being auto-required too early.
 remove 'fat_free_crm'
 
@@ -82,13 +86,8 @@ group :test do
   gem 'webrick'
 end
 
-group :heroku do
-  gem 'rails_12factor'
-  gem 'puma'
-end
 
-gem 'responds_to_parent', git: 'https://github.com/RedPatchTechnologies/responds_to_parent.git', branch: 'master' # Temporarily pointed at git until https://github.com/zendesk/responds_to_parent/pull/7 is released
-gem 'acts_as_commentable', git: 'https://github.com/fatfreecrm/acts_as_commentable.git', branch: 'main' # Our fork
+gem 'acts_as_commentable', '~> 4.0'
 gem 'sassc-rails'
 gem 'coffee-rails'
 gem 'uglifier'
@@ -107,4 +106,4 @@ gem 'ransack_ui'
 gem 'bootstrap', '~>5.0.0'
 gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
-gem 'jquery-ui-rails', git: 'https://github.com/jquery-ui-rails/jquery-ui-rails.git', tag: 'v7.0.0' # See https://github.com/jquery-ui-rails/jquery-ui-rails/issues/146
+gem 'jquery-ui-rails', '~> 7.0'

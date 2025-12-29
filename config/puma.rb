@@ -11,8 +11,8 @@ threads threads_count, threads_count
 
 rails_env = ENV.fetch('RAILS_ENV', 'development')
 environment rails_env
-port ENV.fetch('PORT', 3000)
-bind "tcp://0.0.0.0:#{ENV.fetch("PORT") { 3000 }}"
+port ENV.fetch("PORT") { 3000 }
+environment ENV.fetch("RAILS_ENV") { "production" }
 
 preload_app! unless rails_env == 'development'
 
