@@ -4,7 +4,10 @@ class ConvertToActiveStorage < ActiveRecord::Migration[5.2]
   require 'open-uri'
 
   def up
-    return unless table_exists?(:action_text_rich_texts)
+    return unless table_exists?(:active_storage_blobs)
+    return unless table_exists?(:active_storage_attachments)
+    return unless column_exists?(:users, :avatar_file_name)
+
 
     get_blob_id = case ENV['CI'] && ENV['DB']
                   when 'sqlite'
