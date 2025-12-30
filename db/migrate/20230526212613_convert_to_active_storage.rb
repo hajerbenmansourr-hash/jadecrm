@@ -6,7 +6,6 @@ class ConvertToActiveStorage < ActiveRecord::Migration[5.2]
   def up
     return unless table_exists?(:active_storage_blobs)
     return unless table_exists?(:active_storage_attachments)
-    return unless column_exists?(:users, :avatar_file_name)
 
 
     get_blob_id = case ENV['CI'] && ENV['DB']
