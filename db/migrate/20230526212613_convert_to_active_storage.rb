@@ -4,6 +4,8 @@ class ConvertToActiveStorage < ActiveRecord::Migration[5.2]
   require 'open-uri'
 
   def up
+    return unless table_exists?(:action_text_rich_texts)
+
     get_blob_id = case ENV['CI'] && ENV['DB']
                   when 'sqlite'
                     'LAST_INSERT_ROWID()'
