@@ -11,12 +11,16 @@ threads threads_count, threads_count
 
 rails_env = ENV.fetch('RAILS_ENV', 'development')
 environment rails_env
-port ENV.fetch("PORT") { 3000 }
+port        ENV.fetch("PORT") { 3000 }
 environment ENV.fetch("RAILS_ENV") { "production" }
+bind        "tcp://0.0.0.0:3000"
+workers     ENV.fetch("WEB_CONCURRENCY") { 2 }
+threads     1, 5
 
-preload_app! unless rails_env == 'development'
+preload_app!
 
 plugin :tmp_restart
+
 
 unless Puma.jruby? || Puma.windows? # workers supported
   workers Integer(ENV['WEB_CONCURRENCY'] || 2)

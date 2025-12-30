@@ -87,7 +87,8 @@ group :test do
 end
 
 
-gem 'acts_as_commentable', '~> 4.0'
+# Replace or remove any other acts_as_commentable references
+gem 'acts_as_commentable', '~> 4.0.2'
 gem 'sassc-rails'
 gem 'coffee-rails'
 gem 'uglifier'
