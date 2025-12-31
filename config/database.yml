@@ -14,11 +14,12 @@ test:
 
 production:
   adapter: postgresql
-  host: cb5ajfjosdpmil.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com
-  database: dd1b7cn9ce0avo
-  username: u8j54qnvrj023m
-  password: p7eb5425774df70f8617e0ef6e7f63e79eb144420bb8bb505cbba040d1099e000
+  host: openweb-db.postgres.database.azure.com
+  database: jadecrm
+  username: adminjade
+  password: "!JadeAdvisory@2025#"
   port: 5432
+  sslmode: require
   schema_search_path: public
   min_messages: warning
 
